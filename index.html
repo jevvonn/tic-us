@@ -11,17 +11,12 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
 
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/logo-ticus.png" alt="" />
         </a>
@@ -69,78 +64,512 @@
       </div>
     </nav>
 
-    <div id="carousel-hero" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carousel-hero"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carousel-hero"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carousel-hero"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="./assets/images/slide-placeholder.png"
-            class="d-block w-100"
-            alt="placeholder"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./assets/images/slide-placeholder.png"
-            class="d-block w-100"
-            alt="placeholder"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="./assets/images/slide-placeholder.png"
-            class="d-block w-100"
-            alt="placeholder"
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carousel-hero"
-        data-bs-slide="prev"
+    <div class="container mt-4">
+      <div
+        id="carousel-hero"
+        class="carousel slide"
+        style="border-radius: 20px; overflow: hidden"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carousel-hero"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-hero"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-hero"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-hero"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/slide-placeholder.png"
+              class="d-block w-100"
+              alt="placeholder"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slide-placeholder.png"
+              class="d-block w-100"
+              alt="placeholder"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/slide-placeholder.png"
+              class="d-block w-100"
+              alt="placeholder"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-hero"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-hero"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
 
-    <div class="container">
+    <div class="mt-4 container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center my-5">Tic-Us</h1>
+          <h1 class="mb-3">Special For You</h1>
         </div>
       </div>
+
+      <div
+        id="carousel-ticket-special"
+        class="carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/ticket-placeholder.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera Cina</h5>
+
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 7.15C4.5264 7.15 4.0722 6.96563 3.73731 6.63744C3.40242 6.30925 3.21429 5.86413 3.21429 5.4C3.21429 4.93587 3.40242 4.49075 3.73731 4.16256C4.0722 3.83437 4.5264 3.65 5 3.65C5.4736 3.65 5.9278 3.83437 6.26269 4.16256C6.59758 4.49075 6.78571 4.93587 6.78571 5.4C6.78571 5.62981 6.73953 5.85738 6.64979 6.0697C6.56004 6.28202 6.42851 6.47493 6.26269 6.63744C6.09687 6.79994 5.90002 6.92884 5.68336 7.01679C5.46671 7.10473 5.2345 7.15 5 7.15ZM5 0.5C3.67392 0.5 2.40215 1.01625 1.46447 1.93518C0.526784 2.8541 0 4.10044 0 5.4C0 9.075 5 14.5 5 14.5C5 14.5 10 9.075 10 5.4C10 4.10044 9.47322 2.8541 8.53553 1.93518C7.59785 1.01625 6.32608 0.5 5 0.5Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <p class="text-body-secondary mb-0">Jakarta, Indonesia</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-1">
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 4.16667V10.3333C12 10.908 11.7717 11.4591 11.3654 11.8654C10.9591 12.2717 10.408 12.5 9.83333 12.5H2.16667C1.59203 12.5 1.04093 12.2717 0.634602 11.8654C0.228273 11.4591 0 10.908 0 10.3333V4.16667H12ZM2.83333 8.5C2.61232 8.5 2.40036 8.5878 2.24408 8.74408C2.0878 8.90036 2 9.11232 2 9.33333C2 9.55435 2.0878 9.76631 2.24408 9.92259C2.40036 10.0789 2.61232 10.1667 2.83333 10.1667C3.05435 10.1667 3.26631 10.0789 3.42259 9.92259C3.57887 9.76631 3.66667 9.55435 3.66667 9.33333C3.66667 9.11232 3.57887 8.90036 3.42259 8.74408C3.26631 8.5878 3.05435 8.5 2.83333 8.5ZM6 8.5C5.77899 8.5 5.56702 8.5878 5.41074 8.74408C5.25446 8.90036 5.16667 9.11232 5.16667 9.33333C5.16667 9.55435 5.25446 9.76631 5.41074 9.92259C5.56702 10.0789 5.77899 10.1667 6 10.1667C6.22101 10.1667 6.43298 10.0789 6.58926 9.92259C6.74554 9.76631 6.83333 9.55435 6.83333 9.33333C6.83333 9.11232 6.74554 8.90036 6.58926 8.74408C6.43298 8.5878 6.22101 8.5 6 8.5ZM2.83333 5.5C2.61232 5.5 2.40036 5.5878 2.24408 5.74408C2.0878 5.90036 2 6.11232 2 6.33333C2 6.55435 2.0878 6.76631 2.24408 6.92259C2.40036 7.07887 2.61232 7.16667 2.83333 7.16667C3.05435 7.16667 3.26631 7.07887 3.42259 6.92259C3.57887 6.76631 3.66667 6.55435 3.66667 6.33333C3.66667 6.11232 3.57887 5.90036 3.42259 5.74408C3.26631 5.5878 3.05435 5.5 2.83333 5.5ZM6 5.5C5.77899 5.5 5.56702 5.5878 5.41074 5.74408C5.25446 5.90036 5.16667 6.11232 5.16667 6.33333C5.16667 6.55435 5.25446 6.76631 5.41074 6.92259C5.56702 7.07887 5.77899 7.16667 6 7.16667C6.22101 7.16667 6.43298 7.07887 6.58926 6.92259C6.74554 6.76631 6.83333 6.55435 6.83333 6.33333C6.83333 6.11232 6.74554 5.90036 6.58926 5.74408C6.43298 5.5878 6.22101 5.5 6 5.5ZM9.16667 5.5C8.94565 5.5 8.73369 5.5878 8.57741 5.74408C8.42113 5.90036 8.33333 6.11232 8.33333 6.33333C8.33333 6.55435 8.42113 6.76631 8.57741 6.92259C8.73369 7.07887 8.94565 7.16667 9.16667 7.16667C9.38768 7.16667 9.59964 7.07887 9.75592 6.92259C9.9122 6.76631 10 6.55435 10 6.33333C10 6.11232 9.9122 5.90036 9.75592 5.74408C9.59964 5.5878 9.38768 5.5 9.16667 5.5ZM9.83333 0.5C10.408 0.5 10.9591 0.728273 11.3654 1.1346C11.7717 1.54093 12 2.09203 12 2.66667V3.16667H0V2.66667C0 2.09203 0.228273 1.54093 0.634602 1.1346C1.04093 0.728273 1.59203 0.5 2.16667 0.5H9.83333Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+
+                    <p class="text-body-secondary mb-0">23 Agustus, 2025</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <p class="text-body-secondary mb-0">Mulai dari</p>
+                    <h4 class="m-0 ticket-price">Rp99.000</h4>
+                  </div>
+                  <span class="text-success">Tiket tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/ticket-placeholder.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera Cina</h5>
+
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 7.15C4.5264 7.15 4.0722 6.96563 3.73731 6.63744C3.40242 6.30925 3.21429 5.86413 3.21429 5.4C3.21429 4.93587 3.40242 4.49075 3.73731 4.16256C4.0722 3.83437 4.5264 3.65 5 3.65C5.4736 3.65 5.9278 3.83437 6.26269 4.16256C6.59758 4.49075 6.78571 4.93587 6.78571 5.4C6.78571 5.62981 6.73953 5.85738 6.64979 6.0697C6.56004 6.28202 6.42851 6.47493 6.26269 6.63744C6.09687 6.79994 5.90002 6.92884 5.68336 7.01679C5.46671 7.10473 5.2345 7.15 5 7.15ZM5 0.5C3.67392 0.5 2.40215 1.01625 1.46447 1.93518C0.526784 2.8541 0 4.10044 0 5.4C0 9.075 5 14.5 5 14.5C5 14.5 10 9.075 10 5.4C10 4.10044 9.47322 2.8541 8.53553 1.93518C7.59785 1.01625 6.32608 0.5 5 0.5Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <p class="text-body-secondary mb-0">Jakarta, Indonesia</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-1">
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 4.16667V10.3333C12 10.908 11.7717 11.4591 11.3654 11.8654C10.9591 12.2717 10.408 12.5 9.83333 12.5H2.16667C1.59203 12.5 1.04093 12.2717 0.634602 11.8654C0.228273 11.4591 0 10.908 0 10.3333V4.16667H12ZM2.83333 8.5C2.61232 8.5 2.40036 8.5878 2.24408 8.74408C2.0878 8.90036 2 9.11232 2 9.33333C2 9.55435 2.0878 9.76631 2.24408 9.92259C2.40036 10.0789 2.61232 10.1667 2.83333 10.1667C3.05435 10.1667 3.26631 10.0789 3.42259 9.92259C3.57887 9.76631 3.66667 9.55435 3.66667 9.33333C3.66667 9.11232 3.57887 8.90036 3.42259 8.74408C3.26631 8.5878 3.05435 8.5 2.83333 8.5ZM6 8.5C5.77899 8.5 5.56702 8.5878 5.41074 8.74408C5.25446 8.90036 5.16667 9.11232 5.16667 9.33333C5.16667 9.55435 5.25446 9.76631 5.41074 9.92259C5.56702 10.0789 5.77899 10.1667 6 10.1667C6.22101 10.1667 6.43298 10.0789 6.58926 9.92259C6.74554 9.76631 6.83333 9.55435 6.83333 9.33333C6.83333 9.11232 6.74554 8.90036 6.58926 8.74408C6.43298 8.5878 6.22101 8.5 6 8.5ZM2.83333 5.5C2.61232 5.5 2.40036 5.5878 2.24408 5.74408C2.0878 5.90036 2 6.11232 2 6.33333C2 6.55435 2.0878 6.76631 2.24408 6.92259C2.40036 7.07887 2.61232 7.16667 2.83333 7.16667C3.05435 7.16667 3.26631 7.07887 3.42259 6.92259C3.57887 6.76631 3.66667 6.55435 3.66667 6.33333C3.66667 6.11232 3.57887 5.90036 3.42259 5.74408C3.26631 5.5878 3.05435 5.5 2.83333 5.5ZM6 5.5C5.77899 5.5 5.56702 5.5878 5.41074 5.74408C5.25446 5.90036 5.16667 6.11232 5.16667 6.33333C5.16667 6.55435 5.25446 6.76631 5.41074 6.92259C5.56702 7.07887 5.77899 7.16667 6 7.16667C6.22101 7.16667 6.43298 7.07887 6.58926 6.92259C6.74554 6.76631 6.83333 6.55435 6.83333 6.33333C6.83333 6.11232 6.74554 5.90036 6.58926 5.74408C6.43298 5.5878 6.22101 5.5 6 5.5ZM9.16667 5.5C8.94565 5.5 8.73369 5.5878 8.57741 5.74408C8.42113 5.90036 8.33333 6.11232 8.33333 6.33333C8.33333 6.55435 8.42113 6.76631 8.57741 6.92259C8.73369 7.07887 8.94565 7.16667 9.16667 7.16667C9.38768 7.16667 9.59964 7.07887 9.75592 6.92259C9.9122 6.76631 10 6.55435 10 6.33333C10 6.11232 9.9122 5.90036 9.75592 5.74408C9.59964 5.5878 9.38768 5.5 9.16667 5.5ZM9.83333 0.5C10.408 0.5 10.9591 0.728273 11.3654 1.1346C11.7717 1.54093 12 2.09203 12 2.66667V3.16667H0V2.66667C0 2.09203 0.228273 1.54093 0.634602 1.1346C1.04093 0.728273 1.59203 0.5 2.16667 0.5H9.83333Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+
+                    <p class="text-body-secondary mb-0">23 Agustus, 2025</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <p class="text-body-secondary mb-0">Mulai dari</p>
+                    <h4 class="m-0 ticket-price">Rp99.000</h4>
+                  </div>
+                  <span class="text-success">Tiket tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/ticket-placeholder.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera Cina</h5>
+
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 7.15C4.5264 7.15 4.0722 6.96563 3.73731 6.63744C3.40242 6.30925 3.21429 5.86413 3.21429 5.4C3.21429 4.93587 3.40242 4.49075 3.73731 4.16256C4.0722 3.83437 4.5264 3.65 5 3.65C5.4736 3.65 5.9278 3.83437 6.26269 4.16256C6.59758 4.49075 6.78571 4.93587 6.78571 5.4C6.78571 5.62981 6.73953 5.85738 6.64979 6.0697C6.56004 6.28202 6.42851 6.47493 6.26269 6.63744C6.09687 6.79994 5.90002 6.92884 5.68336 7.01679C5.46671 7.10473 5.2345 7.15 5 7.15ZM5 0.5C3.67392 0.5 2.40215 1.01625 1.46447 1.93518C0.526784 2.8541 0 4.10044 0 5.4C0 9.075 5 14.5 5 14.5C5 14.5 10 9.075 10 5.4C10 4.10044 9.47322 2.8541 8.53553 1.93518C7.59785 1.01625 6.32608 0.5 5 0.5Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <p class="text-body-secondary mb-0">Jakarta, Indonesia</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-1">
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 4.16667V10.3333C12 10.908 11.7717 11.4591 11.3654 11.8654C10.9591 12.2717 10.408 12.5 9.83333 12.5H2.16667C1.59203 12.5 1.04093 12.2717 0.634602 11.8654C0.228273 11.4591 0 10.908 0 10.3333V4.16667H12ZM2.83333 8.5C2.61232 8.5 2.40036 8.5878 2.24408 8.74408C2.0878 8.90036 2 9.11232 2 9.33333C2 9.55435 2.0878 9.76631 2.24408 9.92259C2.40036 10.0789 2.61232 10.1667 2.83333 10.1667C3.05435 10.1667 3.26631 10.0789 3.42259 9.92259C3.57887 9.76631 3.66667 9.55435 3.66667 9.33333C3.66667 9.11232 3.57887 8.90036 3.42259 8.74408C3.26631 8.5878 3.05435 8.5 2.83333 8.5ZM6 8.5C5.77899 8.5 5.56702 8.5878 5.41074 8.74408C5.25446 8.90036 5.16667 9.11232 5.16667 9.33333C5.16667 9.55435 5.25446 9.76631 5.41074 9.92259C5.56702 10.0789 5.77899 10.1667 6 10.1667C6.22101 10.1667 6.43298 10.0789 6.58926 9.92259C6.74554 9.76631 6.83333 9.55435 6.83333 9.33333C6.83333 9.11232 6.74554 8.90036 6.58926 8.74408C6.43298 8.5878 6.22101 8.5 6 8.5ZM2.83333 5.5C2.61232 5.5 2.40036 5.5878 2.24408 5.74408C2.0878 5.90036 2 6.11232 2 6.33333C2 6.55435 2.0878 6.76631 2.24408 6.92259C2.40036 7.07887 2.61232 7.16667 2.83333 7.16667C3.05435 7.16667 3.26631 7.07887 3.42259 6.92259C3.57887 6.76631 3.66667 6.55435 3.66667 6.33333C3.66667 6.11232 3.57887 5.90036 3.42259 5.74408C3.26631 5.5878 3.05435 5.5 2.83333 5.5ZM6 5.5C5.77899 5.5 5.56702 5.5878 5.41074 5.74408C5.25446 5.90036 5.16667 6.11232 5.16667 6.33333C5.16667 6.55435 5.25446 6.76631 5.41074 6.92259C5.56702 7.07887 5.77899 7.16667 6 7.16667C6.22101 7.16667 6.43298 7.07887 6.58926 6.92259C6.74554 6.76631 6.83333 6.55435 6.83333 6.33333C6.83333 6.11232 6.74554 5.90036 6.58926 5.74408C6.43298 5.5878 6.22101 5.5 6 5.5ZM9.16667 5.5C8.94565 5.5 8.73369 5.5878 8.57741 5.74408C8.42113 5.90036 8.33333 6.11232 8.33333 6.33333C8.33333 6.55435 8.42113 6.76631 8.57741 6.92259C8.73369 7.07887 8.94565 7.16667 9.16667 7.16667C9.38768 7.16667 9.59964 7.07887 9.75592 6.92259C9.9122 6.76631 10 6.55435 10 6.33333C10 6.11232 9.9122 5.90036 9.75592 5.74408C9.59964 5.5878 9.38768 5.5 9.16667 5.5ZM9.83333 0.5C10.408 0.5 10.9591 0.728273 11.3654 1.1346C11.7717 1.54093 12 2.09203 12 2.66667V3.16667H0V2.66667C0 2.09203 0.228273 1.54093 0.634602 1.1346C1.04093 0.728273 1.59203 0.5 2.16667 0.5H9.83333Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+
+                    <p class="text-body-secondary mb-0">23 Agustus, 2025</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <p class="text-body-secondary mb-0">Mulai dari</p>
+                    <h4 class="m-0 ticket-price">Rp99.000</h4>
+                  </div>
+                  <span class="text-success">Tiket tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/ticket-placeholder.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera Cina</h5>
+
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 7.15C4.5264 7.15 4.0722 6.96563 3.73731 6.63744C3.40242 6.30925 3.21429 5.86413 3.21429 5.4C3.21429 4.93587 3.40242 4.49075 3.73731 4.16256C4.0722 3.83437 4.5264 3.65 5 3.65C5.4736 3.65 5.9278 3.83437 6.26269 4.16256C6.59758 4.49075 6.78571 4.93587 6.78571 5.4C6.78571 5.62981 6.73953 5.85738 6.64979 6.0697C6.56004 6.28202 6.42851 6.47493 6.26269 6.63744C6.09687 6.79994 5.90002 6.92884 5.68336 7.01679C5.46671 7.10473 5.2345 7.15 5 7.15ZM5 0.5C3.67392 0.5 2.40215 1.01625 1.46447 1.93518C0.526784 2.8541 0 4.10044 0 5.4C0 9.075 5 14.5 5 14.5C5 14.5 10 9.075 10 5.4C10 4.10044 9.47322 2.8541 8.53553 1.93518C7.59785 1.01625 6.32608 0.5 5 0.5Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <p class="text-body-secondary mb-0">Jakarta, Indonesia</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-1">
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 4.16667V10.3333C12 10.908 11.7717 11.4591 11.3654 11.8654C10.9591 12.2717 10.408 12.5 9.83333 12.5H2.16667C1.59203 12.5 1.04093 12.2717 0.634602 11.8654C0.228273 11.4591 0 10.908 0 10.3333V4.16667H12ZM2.83333 8.5C2.61232 8.5 2.40036 8.5878 2.24408 8.74408C2.0878 8.90036 2 9.11232 2 9.33333C2 9.55435 2.0878 9.76631 2.24408 9.92259C2.40036 10.0789 2.61232 10.1667 2.83333 10.1667C3.05435 10.1667 3.26631 10.0789 3.42259 9.92259C3.57887 9.76631 3.66667 9.55435 3.66667 9.33333C3.66667 9.11232 3.57887 8.90036 3.42259 8.74408C3.26631 8.5878 3.05435 8.5 2.83333 8.5ZM6 8.5C5.77899 8.5 5.56702 8.5878 5.41074 8.74408C5.25446 8.90036 5.16667 9.11232 5.16667 9.33333C5.16667 9.55435 5.25446 9.76631 5.41074 9.92259C5.56702 10.0789 5.77899 10.1667 6 10.1667C6.22101 10.1667 6.43298 10.0789 6.58926 9.92259C6.74554 9.76631 6.83333 9.55435 6.83333 9.33333C6.83333 9.11232 6.74554 8.90036 6.58926 8.74408C6.43298 8.5878 6.22101 8.5 6 8.5ZM2.83333 5.5C2.61232 5.5 2.40036 5.5878 2.24408 5.74408C2.0878 5.90036 2 6.11232 2 6.33333C2 6.55435 2.0878 6.76631 2.24408 6.92259C2.40036 7.07887 2.61232 7.16667 2.83333 7.16667C3.05435 7.16667 3.26631 7.07887 3.42259 6.92259C3.57887 6.76631 3.66667 6.55435 3.66667 6.33333C3.66667 6.11232 3.57887 5.90036 3.42259 5.74408C3.26631 5.5878 3.05435 5.5 2.83333 5.5ZM6 5.5C5.77899 5.5 5.56702 5.5878 5.41074 5.74408C5.25446 5.90036 5.16667 6.11232 5.16667 6.33333C5.16667 6.55435 5.25446 6.76631 5.41074 6.92259C5.56702 7.07887 5.77899 7.16667 6 7.16667C6.22101 7.16667 6.43298 7.07887 6.58926 6.92259C6.74554 6.76631 6.83333 6.55435 6.83333 6.33333C6.83333 6.11232 6.74554 5.90036 6.58926 5.74408C6.43298 5.5878 6.22101 5.5 6 5.5ZM9.16667 5.5C8.94565 5.5 8.73369 5.5878 8.57741 5.74408C8.42113 5.90036 8.33333 6.11232 8.33333 6.33333C8.33333 6.55435 8.42113 6.76631 8.57741 6.92259C8.73369 7.07887 8.94565 7.16667 9.16667 7.16667C9.38768 7.16667 9.59964 7.07887 9.75592 6.92259C9.9122 6.76631 10 6.55435 10 6.33333C10 6.11232 9.9122 5.90036 9.75592 5.74408C9.59964 5.5878 9.38768 5.5 9.16667 5.5ZM9.83333 0.5C10.408 0.5 10.9591 0.728273 11.3654 1.1346C11.7717 1.54093 12 2.09203 12 2.66667V3.16667H0V2.66667C0 2.09203 0.228273 1.54093 0.634602 1.1346C1.04093 0.728273 1.59203 0.5 2.16667 0.5H9.83333Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+
+                    <p class="text-body-secondary mb-0">23 Agustus, 2025</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <p class="text-body-secondary mb-0">Mulai dari</p>
+                    <h4 class="m-0 ticket-price">Rp99.000</h4>
+                  </div>
+                  <span class="text-success">Tiket tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/ticket-placeholder.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera Cina</h5>
+
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 7.15C4.5264 7.15 4.0722 6.96563 3.73731 6.63744C3.40242 6.30925 3.21429 5.86413 3.21429 5.4C3.21429 4.93587 3.40242 4.49075 3.73731 4.16256C4.0722 3.83437 4.5264 3.65 5 3.65C5.4736 3.65 5.9278 3.83437 6.26269 4.16256C6.59758 4.49075 6.78571 4.93587 6.78571 5.4C6.78571 5.62981 6.73953 5.85738 6.64979 6.0697C6.56004 6.28202 6.42851 6.47493 6.26269 6.63744C6.09687 6.79994 5.90002 6.92884 5.68336 7.01679C5.46671 7.10473 5.2345 7.15 5 7.15ZM5 0.5C3.67392 0.5 2.40215 1.01625 1.46447 1.93518C0.526784 2.8541 0 4.10044 0 5.4C0 9.075 5 14.5 5 14.5C5 14.5 10 9.075 10 5.4C10 4.10044 9.47322 2.8541 8.53553 1.93518C7.59785 1.01625 6.32608 0.5 5 0.5Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <p class="text-body-secondary mb-0">Jakarta, Indonesia</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-1">
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 4.16667V10.3333C12 10.908 11.7717 11.4591 11.3654 11.8654C10.9591 12.2717 10.408 12.5 9.83333 12.5H2.16667C1.59203 12.5 1.04093 12.2717 0.634602 11.8654C0.228273 11.4591 0 10.908 0 10.3333V4.16667H12ZM2.83333 8.5C2.61232 8.5 2.40036 8.5878 2.24408 8.74408C2.0878 8.90036 2 9.11232 2 9.33333C2 9.55435 2.0878 9.76631 2.24408 9.92259C2.40036 10.0789 2.61232 10.1667 2.83333 10.1667C3.05435 10.1667 3.26631 10.0789 3.42259 9.92259C3.57887 9.76631 3.66667 9.55435 3.66667 9.33333C3.66667 9.11232 3.57887 8.90036 3.42259 8.74408C3.26631 8.5878 3.05435 8.5 2.83333 8.5ZM6 8.5C5.77899 8.5 5.56702 8.5878 5.41074 8.74408C5.25446 8.90036 5.16667 9.11232 5.16667 9.33333C5.16667 9.55435 5.25446 9.76631 5.41074 9.92259C5.56702 10.0789 5.77899 10.1667 6 10.1667C6.22101 10.1667 6.43298 10.0789 6.58926 9.92259C6.74554 9.76631 6.83333 9.55435 6.83333 9.33333C6.83333 9.11232 6.74554 8.90036 6.58926 8.74408C6.43298 8.5878 6.22101 8.5 6 8.5ZM2.83333 5.5C2.61232 5.5 2.40036 5.5878 2.24408 5.74408C2.0878 5.90036 2 6.11232 2 6.33333C2 6.55435 2.0878 6.76631 2.24408 6.92259C2.40036 7.07887 2.61232 7.16667 2.83333 7.16667C3.05435 7.16667 3.26631 7.07887 3.42259 6.92259C3.57887 6.76631 3.66667 6.55435 3.66667 6.33333C3.66667 6.11232 3.57887 5.90036 3.42259 5.74408C3.26631 5.5878 3.05435 5.5 2.83333 5.5ZM6 5.5C5.77899 5.5 5.56702 5.5878 5.41074 5.74408C5.25446 5.90036 5.16667 6.11232 5.16667 6.33333C5.16667 6.55435 5.25446 6.76631 5.41074 6.92259C5.56702 7.07887 5.77899 7.16667 6 7.16667C6.22101 7.16667 6.43298 7.07887 6.58926 6.92259C6.74554 6.76631 6.83333 6.55435 6.83333 6.33333C6.83333 6.11232 6.74554 5.90036 6.58926 5.74408C6.43298 5.5878 6.22101 5.5 6 5.5ZM9.16667 5.5C8.94565 5.5 8.73369 5.5878 8.57741 5.74408C8.42113 5.90036 8.33333 6.11232 8.33333 6.33333C8.33333 6.55435 8.42113 6.76631 8.57741 6.92259C8.73369 7.07887 8.94565 7.16667 9.16667 7.16667C9.38768 7.16667 9.59964 7.07887 9.75592 6.92259C9.9122 6.76631 10 6.55435 10 6.33333C10 6.11232 9.9122 5.90036 9.75592 5.74408C9.59964 5.5878 9.38768 5.5 9.16667 5.5ZM9.83333 0.5C10.408 0.5 10.9591 0.728273 11.3654 1.1346C11.7717 1.54093 12 2.09203 12 2.66667V3.16667H0V2.66667C0 2.09203 0.228273 1.54093 0.634602 1.1346C1.04093 0.728273 1.59203 0.5 2.16667 0.5H9.83333Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+
+                    <p class="text-body-secondary mb-0">23 Agustus, 2025</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <p class="text-body-secondary mb-0">Mulai dari</p>
+                    <h4 class="m-0 ticket-price">Rp99.000</h4>
+                  </div>
+                  <span class="text-success">Tiket tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./assets/images/ticket-placeholder.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Opera Cina</h5>
+
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <svg
+                      width="10"
+                      height="15"
+                      viewBox="0 0 10 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 7.15C4.5264 7.15 4.0722 6.96563 3.73731 6.63744C3.40242 6.30925 3.21429 5.86413 3.21429 5.4C3.21429 4.93587 3.40242 4.49075 3.73731 4.16256C4.0722 3.83437 4.5264 3.65 5 3.65C5.4736 3.65 5.9278 3.83437 6.26269 4.16256C6.59758 4.49075 6.78571 4.93587 6.78571 5.4C6.78571 5.62981 6.73953 5.85738 6.64979 6.0697C6.56004 6.28202 6.42851 6.47493 6.26269 6.63744C6.09687 6.79994 5.90002 6.92884 5.68336 7.01679C5.46671 7.10473 5.2345 7.15 5 7.15ZM5 0.5C3.67392 0.5 2.40215 1.01625 1.46447 1.93518C0.526784 2.8541 0 4.10044 0 5.4C0 9.075 5 14.5 5 14.5C5 14.5 10 9.075 10 5.4C10 4.10044 9.47322 2.8541 8.53553 1.93518C7.59785 1.01625 6.32608 0.5 5 0.5Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+                    <p class="text-body-secondary mb-0">Jakarta, Indonesia</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-2 mt-1">
+                    <svg
+                      width="12"
+                      height="13"
+                      viewBox="0 0 12 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 4.16667V10.3333C12 10.908 11.7717 11.4591 11.3654 11.8654C10.9591 12.2717 10.408 12.5 9.83333 12.5H2.16667C1.59203 12.5 1.04093 12.2717 0.634602 11.8654C0.228273 11.4591 0 10.908 0 10.3333V4.16667H12ZM2.83333 8.5C2.61232 8.5 2.40036 8.5878 2.24408 8.74408C2.0878 8.90036 2 9.11232 2 9.33333C2 9.55435 2.0878 9.76631 2.24408 9.92259C2.40036 10.0789 2.61232 10.1667 2.83333 10.1667C3.05435 10.1667 3.26631 10.0789 3.42259 9.92259C3.57887 9.76631 3.66667 9.55435 3.66667 9.33333C3.66667 9.11232 3.57887 8.90036 3.42259 8.74408C3.26631 8.5878 3.05435 8.5 2.83333 8.5ZM6 8.5C5.77899 8.5 5.56702 8.5878 5.41074 8.74408C5.25446 8.90036 5.16667 9.11232 5.16667 9.33333C5.16667 9.55435 5.25446 9.76631 5.41074 9.92259C5.56702 10.0789 5.77899 10.1667 6 10.1667C6.22101 10.1667 6.43298 10.0789 6.58926 9.92259C6.74554 9.76631 6.83333 9.55435 6.83333 9.33333C6.83333 9.11232 6.74554 8.90036 6.58926 8.74408C6.43298 8.5878 6.22101 8.5 6 8.5ZM2.83333 5.5C2.61232 5.5 2.40036 5.5878 2.24408 5.74408C2.0878 5.90036 2 6.11232 2 6.33333C2 6.55435 2.0878 6.76631 2.24408 6.92259C2.40036 7.07887 2.61232 7.16667 2.83333 7.16667C3.05435 7.16667 3.26631 7.07887 3.42259 6.92259C3.57887 6.76631 3.66667 6.55435 3.66667 6.33333C3.66667 6.11232 3.57887 5.90036 3.42259 5.74408C3.26631 5.5878 3.05435 5.5 2.83333 5.5ZM6 5.5C5.77899 5.5 5.56702 5.5878 5.41074 5.74408C5.25446 5.90036 5.16667 6.11232 5.16667 6.33333C5.16667 6.55435 5.25446 6.76631 5.41074 6.92259C5.56702 7.07887 5.77899 7.16667 6 7.16667C6.22101 7.16667 6.43298 7.07887 6.58926 6.92259C6.74554 6.76631 6.83333 6.55435 6.83333 6.33333C6.83333 6.11232 6.74554 5.90036 6.58926 5.74408C6.43298 5.5878 6.22101 5.5 6 5.5ZM9.16667 5.5C8.94565 5.5 8.73369 5.5878 8.57741 5.74408C8.42113 5.90036 8.33333 6.11232 8.33333 6.33333C8.33333 6.55435 8.42113 6.76631 8.57741 6.92259C8.73369 7.07887 8.94565 7.16667 9.16667 7.16667C9.38768 7.16667 9.59964 7.07887 9.75592 6.92259C9.9122 6.76631 10 6.55435 10 6.33333C10 6.11232 9.9122 5.90036 9.75592 5.74408C9.59964 5.5878 9.38768 5.5 9.16667 5.5ZM9.83333 0.5C10.408 0.5 10.9591 0.728273 11.3654 1.1346C11.7717 1.54093 12 2.09203 12 2.66667V3.16667H0V2.66667C0 2.09203 0.228273 1.54093 0.634602 1.1346C1.04093 0.728273 1.59203 0.5 2.16667 0.5H9.83333Z"
+                        fill="#6F6F6F"
+                      />
+                    </svg>
+
+                    <p class="text-body-secondary mb-0">23 Agustus, 2025</p>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-end mt-3"
+                >
+                  <div>
+                    <p class="text-body-secondary mb-0">Mulai dari</p>
+                    <h4 class="m-0 ticket-price">Rp99.000</h4>
+                  </div>
+                  <span class="text-success">Tiket tersedia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-ticket-special"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-ticket-special"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var carouselWidth = $("#carousel-ticket-special .carousel-inner")[0]
+        .scrollWidth;
+      var cardWidth = $("#carousel-ticket-special .carousel-item").width();
+      var scrollPosition = 0;
+
+      $("#carousel-ticket-special .carousel-control-next").on(
+        "click",
+        function () {
+          if (scrollPosition < carouselWidth - cardWidth * 4) {
+            scrollPosition += cardWidth; //update scroll position
+            $("#carousel-ticket-special .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        }
+      );
+
+      $("#carousel-ticket-special .carousel-control-prev").on(
+        "click",
+        function () {
+          if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $("#carousel-ticket-special .carousel-inner").animate(
+              { scrollLeft: scrollPosition },
+              600
+            );
+          }
+        }
+      );
+
+      var multipleCardCarousel = document.querySelector(
+        "#carousel-ticket-special"
+      );
+
+      var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+        interval: false,
+      });
+
+      //   if (window.matchMedia("(min-width: 768px)").matches) {
+      //     //rest of the code
+      //     var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+      //       interval: false,
+      //     });
+      //   } else {
+      //     $(multipleCardCarousel).addClass("slide");
+      //   }
+
+      //   var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+      //     interval: false,
+      //     wrap: false,
+      //   });
+    </script>
   </body>
 </html>
