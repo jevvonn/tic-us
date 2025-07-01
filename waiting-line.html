@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/logo-ticus.png"
+            style="width: 40px; height: 40px"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          data-bs-theme="dark"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active fw-bold"
+                href="./all-ticket.html"
+                >All Tickets</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-1">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <button class="btn btn-outline-warning text-white">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row col">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a
+                href="./all-ticket.html"
+                class="text-decoration-none text-body-secondary"
+                >All Tickets</a
+              >
+            </li>
+            <li class="breadcrumb-item">
+              <a
+                href="./all-ticket.html"
+                class="text-decoration-none text-body-secondary"
+                >Show</a
+              >
+            </li>
+            <li class="breadcrumb-item active">
+              <a href="./ticket.html" class="text-decoration-none text-black"
+                >Coldplay Spectacular World Tour</a
+              >
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Waiting Line...</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex align-items-center gap-2">
+          <h6 class="text-body-secondary mb-0">You are now in the Queue</h6>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 17V19H2V17C2 17 2 13 9 13C16 13 16 17 16 17ZM12.5 7.50004C12.5 6.8078 12.2947 6.13111 11.9101 5.55554C11.5256 4.97997 10.9789 4.53137 10.3394 4.26646C9.69985 4.00155 8.99612 3.93224 8.31718 4.06729C7.63825 4.20234 7.01461 4.53568 6.52513 5.02516C6.03564 5.51465 5.7023 6.13829 5.56725 6.81722C5.4322 7.49615 5.50152 8.19989 5.76642 8.83943C6.03133 9.47897 6.47993 10.0256 7.0555 10.4102C7.63108 10.7948 8.30777 11 9 11C9.92826 11 10.8185 10.6313 11.4749 9.97491C12.1313 9.31853 12.5 8.42829 12.5 7.50004ZM15.94 13C16.5547 13.4758 17.0578 14.0805 17.4137 14.7715C17.7696 15.4626 17.9697 16.2233 18 17V19H22V17C22 17 22 13.37 15.94 13ZM15 4.00004C14.3118 3.99684 13.6388 4.20257 13.07 4.59004C13.6774 5.43877 14.0041 6.45632 14.0041 7.50004C14.0041 8.54375 13.6774 9.5613 13.07 10.41C13.6388 10.7975 14.3118 11.0032 15 11C15.9283 11 16.8185 10.6313 17.4749 9.97491C18.1313 9.31853 18.5 8.42829 18.5 7.50004C18.5 6.57178 18.1313 5.68154 17.4749 5.02516C16.8185 4.36879 15.9283 4.00004 15 4.00004Z"
+              fill="#6F6F6F"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="card" style="background-color: #ececec">
+          <div class="card-body">
+            <div class="row">
+              <div class="col text-center">
+                <h1 class="fw-bold" style="font-size: 82px">10.143</h1>
+                <h6 class="text-body-secondary mb-0">Person ahead of you</h6>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="background-color: #d5d5d5"
+              >
+                <div
+                  class="progress-bar"
+                  style="width: 50%; background-color: #d0b280"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col d-flex justify-content-center">
+            <img
+              src="./assets/images/logo-ticus.png"
+              style="width: 60px; height: 60px"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col d-flex gap-2 flex-wrap align-items-center justify-content-center"
+          >
+            <a href="">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31.7503 8.62084C30.2221 7.07769 28.402 5.85412 26.3962 5.02145C24.3903 4.18877 22.2388 3.76365 20.067 3.77084C10.967 3.77084 3.55033 11.1875 3.55033 20.2875C3.55033 23.2042 4.31699 26.0375 5.75033 28.5375L3.41699 37.1042L12.167 34.8042C14.5837 36.1208 17.3003 36.8208 20.067 36.8208C29.167 36.8208 36.5837 29.4042 36.5837 20.3042C36.5837 15.8875 34.867 11.7375 31.7503 8.62084ZM20.067 34.0208C17.6003 34.0208 15.1837 33.3542 13.067 32.1042L12.567 31.8042L7.36699 33.1708L8.75033 28.1042L8.41699 27.5875C7.04624 25.3993 6.31853 22.8696 6.31699 20.2875C6.31699 12.7208 12.4837 6.55418 20.0503 6.55418C23.717 6.55418 27.167 7.98751 29.7503 10.5875C31.0297 11.8606 32.0435 13.3751 32.733 15.0431C33.4225 16.711 33.774 18.4993 33.767 20.3042C33.8003 27.8708 27.6337 34.0208 20.067 34.0208ZM27.6003 23.7542C27.1837 23.5542 25.1503 22.5542 24.7837 22.4042C24.4003 22.2708 24.1337 22.2042 23.8503 22.6042C23.567 23.0208 22.7837 23.9542 22.5503 24.2208C22.317 24.5042 22.067 24.5375 21.6503 24.3208C21.2337 24.1208 19.9003 23.6708 18.3337 22.2708C17.1003 21.1708 16.2837 19.8208 16.0337 19.4042C15.8003 18.9875 16.0003 18.7708 16.217 18.5542C16.4003 18.3708 16.6337 18.0708 16.8337 17.8375C17.0337 17.6042 17.117 17.4208 17.2503 17.1542C17.3837 16.8708 17.317 16.6375 17.217 16.4375C17.117 16.2375 16.2837 14.2042 15.9503 13.3708C15.617 12.5708 15.267 12.6708 15.017 12.6542H14.217C13.9337 12.6542 13.5003 12.7542 13.117 13.1708C12.7503 13.5875 11.6837 14.5875 11.6837 16.6208C11.6837 18.6542 13.167 20.6208 13.367 20.8875C13.567 21.1708 16.2837 25.3375 20.417 27.1208C21.4003 27.5542 22.167 27.8042 22.767 27.9875C23.7503 28.3042 24.6503 28.2542 25.367 28.1542C26.167 28.0375 27.817 27.1542 28.1503 26.1875C28.5003 25.2208 28.5003 24.4042 28.3837 24.2208C28.267 24.0375 28.017 23.9542 27.6003 23.7542Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.9997 3.77087H26.9997C32.333 3.77087 36.6663 8.10421 36.6663 13.4375V27.4375C36.6663 30.0013 35.6479 32.4601 33.835 34.2729C32.0222 36.0858 29.5634 37.1042 26.9997 37.1042H12.9997C7.66634 37.1042 3.33301 32.7709 3.33301 27.4375V13.4375C3.33301 10.8738 4.35146 8.41503 6.16431 6.60218C7.97716 4.78932 10.4359 3.77087 12.9997 3.77087ZM12.6663 7.10421C11.075 7.10421 9.54892 7.73635 8.4237 8.86157C7.29848 9.98678 6.66634 11.5129 6.66634 13.1042V27.7709C6.66634 31.0875 9.34967 33.7709 12.6663 33.7709H27.333C28.9243 33.7709 30.4504 33.1387 31.5756 32.0135C32.7009 30.8883 33.333 29.3622 33.333 27.7709V13.1042C33.333 9.78754 30.6497 7.10421 27.333 7.10421H12.6663ZM28.7497 9.60421C29.3022 9.60421 29.8321 9.8237 30.2228 10.2144C30.6135 10.6051 30.833 11.135 30.833 11.6875C30.833 12.2401 30.6135 12.77 30.2228 13.1607C29.8321 13.5514 29.3022 13.7709 28.7497 13.7709C28.1971 13.7709 27.6672 13.5514 27.2765 13.1607C26.8858 12.77 26.6663 12.2401 26.6663 11.6875C26.6663 11.135 26.8858 10.6051 27.2765 10.2144C27.6672 9.8237 28.1971 9.60421 28.7497 9.60421ZM19.9997 12.1042C22.2098 12.1042 24.3294 12.9822 25.8922 14.545C27.455 16.1078 28.333 18.2274 28.333 20.4375C28.333 22.6477 27.455 24.7673 25.8922 26.3301C24.3294 27.8929 22.2098 28.7709 19.9997 28.7709C17.7895 28.7709 15.6699 27.8929 14.1071 26.3301C12.5443 24.7673 11.6663 22.6477 11.6663 20.4375C11.6663 18.2274 12.5443 16.1078 14.1071 14.545C15.6699 12.9822 17.7895 12.1042 19.9997 12.1042ZM19.9997 15.4375C18.6736 15.4375 17.4018 15.9643 16.4641 16.902C15.5265 17.8397 14.9997 19.1115 14.9997 20.4375C14.9997 21.7636 15.5265 23.0354 16.4641 23.9731C17.4018 24.9108 18.6736 25.4375 19.9997 25.4375C21.3258 25.4375 22.5975 24.9108 23.5352 23.9731C24.4729 23.0354 24.9997 21.7636 24.9997 20.4375C24.9997 19.1115 24.4729 17.8397 23.5352 16.902C22.5975 15.9643 21.3258 15.4375 19.9997 15.4375Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_341_8084)">
+                  <mask
+                    id="mask0_341_8084"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="32"
+                    height="33"
+                  >
+                    <path d="M0 0.4375H32V32.4375H0V0.4375Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_341_8084)">
+                    <path
+                      d="M25.2 1.93689H30.1074L19.3874 14.2203L32 30.938H22.1257L14.3863 20.8009L5.54057 30.938H0.628571L12.0937 17.7952L0 1.93918H10.1257L17.1109 11.2032L25.2 1.93689ZM23.4743 27.994H26.1943L8.64 4.72775H5.72343L23.4743 27.994Z"
+                      fill="#F2F2F2"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_341_8084">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.4375)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                width="40"
+                height="41"
+                viewBox="0 0 40 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.375 4.8125H5.625C4.93359 4.8125 4.375 5.37109 4.375 6.0625V34.8125C4.375 35.5039 4.93359 36.0625 5.625 36.0625H34.375C35.0664 36.0625 35.625 35.5039 35.625 34.8125V6.0625C35.625 5.37109 35.0664 4.8125 34.375 4.8125ZM33.125 33.5625H25.9336V23.9609H29.9961L30.6055 19.2461H25.9336V16.2344C25.9336 14.8672 26.3125 13.9375 28.2695 13.9375H30.7656V9.71875C30.332 9.66016 28.8516 9.53125 27.125 9.53125C23.5234 9.53125 21.0586 11.7305 21.0586 15.7656V19.2422H16.9883V23.957H21.0625V33.5625H6.875V7.3125H33.125V33.5625Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div
+            class="col d-flex gap-2 flex-wrap align-items-center justify-content-center text-center"
+          >
+            <p class="text-white">
+              <a href="" class="text-white" style="text-decoration: none"
+                >Apa itu TicUs?</a
+              >
+              •
+              <a href="" class="text-white" style="text-decoration: none"
+                >Syarat & Ketentuan Kebijakan</a
+              >
+              •
+              <a href="" class="text-white" style="text-decoration: none"
+                >Privasi</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center text-center">
+            <p class="text-white">
+              ©2025. PT Sekelompok DBD (bukan sakit). All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
