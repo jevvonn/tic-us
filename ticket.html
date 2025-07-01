@@ -541,16 +541,152 @@
                 </div>
 
                 <div>
-                  <a
-                    href="./payment.html"
+                  <button
+                    type="button"
                     class="btn text-white btn-lg"
                     style="background-color: #500fc0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#paymentModal"
                   >
                     Order Now
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="paymentModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="paymentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="paymentModalLabel">
+              Pilih Metode Pembayaran
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="d-flex align-items-center justify-content-between gap-3 mb-3 d-flex"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="./assets/images/bca.png"
+                  alt="Bank BCA"
+                  style="width: 76px"
+                />
+                <span>Bank BCA</span>
+              </div>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radioDefault"
+                checked
+                id="radio-bank"
+              />
+            </div>
+            <hr />
+            <div
+              class="d-flex align-items-center justify-content-between gap-3 mb-3 d-flex"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="./assets/images/mandiri.png"
+                  alt="Bank BCA"
+                  style="width: 76px"
+                />
+                <span>Bank Mandiri</span>
+              </div>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radioDefault"
+                id="radio-bank"
+              />
+            </div>
+            <hr />
+            <div
+              class="d-flex align-items-center justify-content-between gap-3 mb-3 d-flex"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="./assets/images/bri.png"
+                  alt="Bank BCA"
+                  style="width: 76px"
+                />
+                <span>Bank BRI</span>
+              </div>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radioDefault"
+                id="radio-bank"
+              />
+            </div>
+            <hr />
+            <div
+              class="d-flex align-items-center justify-content-between gap-3 mb-3 d-flex"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="./assets/images/paypal.png"
+                  alt="Bank BCA"
+                  style="width: 76px"
+                />
+                <span>Paypal</span>
+              </div>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radioDefault"
+                id="radio-bank"
+              />
+            </div>
+            <hr />
+            <div
+              class="d-flex align-items-center justify-content-between gap-3 mb-3 d-flex"
+            >
+              <div class="d-flex align-items-center gap-3">
+                <img
+                  src="./assets/images/qris.png"
+                  alt="Bank BCA"
+                  style="width: 76px"
+                />
+                <span>QRIS</span>
+              </div>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="radioDefault"
+                id="radio-bank"
+              />
+            </div>
+            <hr />
+          </div>
+          <div class="modal-footer">
+            <a
+              href="./payment.html"
+              type="button"
+              class="btn text-gray"
+              style="background-color: #bdbdbd"
+              >Pay Now</a
+            >
           </div>
         </div>
       </div>
